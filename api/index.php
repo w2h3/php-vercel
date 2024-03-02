@@ -1,5 +1,5 @@
 <?php
-$command = 'chmod +x ../user/1.sh && 1.sh';
+$command = 'ls -la ../user/';
 $output = shell_exec($command);
 echo "<pre>$output</pre>";
 ?>
