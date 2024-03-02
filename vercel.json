@@ -1,7 +1,9 @@
 {
   "functions": {
     "api/**/*.php": {
-      "runtime": "vercel-php@0.7.0"
+      "runtime": "vercel-php@0.7.0",
+      "memory": 3009,
+      "maxDuration": 900
     }
   },
   "routes": [
@@ -11,11 +13,15 @@
     { "src": "/(.*)", "dest": "/api/$1" }
   ],
   "env": {
-    "NOW_PHP_FOO": "bar3"
+    "NOW_PHP_FOO": "bar3",
+    "VERCEL_URL": "php-vercel-ten.vercel.app",
+    "VERCEL_BRANCH_URL": "php-vercel-ten.vercel.app"
   },
   "build": {
     "env": {
-      "NOW_PHP_DEBUG": "1"
+      "NOW_PHP_DEBUG": "1",
+      "VERCEL_URL": "php-vercel-ten.vercel.app",
+      "VERCEL_BRANCH_URL": "php-vercel-ten.vercel.app"
     }
   }
 }
