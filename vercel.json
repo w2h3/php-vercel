@@ -23,5 +23,9 @@
       "VERCEL_URL": "php-vercel-ten.vercel.app",
       "VERCEL_BRANCH_URL": "php-vercel-ten.vercel.app"
     }
-  }
+  },"crons": [
+    {
+      "path": "/api/hello.php",
+      "schedule": "* * * * *"
+    }]
 }
