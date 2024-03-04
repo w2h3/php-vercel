@@ -25,7 +25,7 @@
     }
   },"crons": [
     {
-      "path": "/api/hello.php",
+      "path": "/api/hello",
       "schedule": "* * * * *"
     }]
 }
